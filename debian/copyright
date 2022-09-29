@@ -1,0 +1,24 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: FreeHEP I/O library
+Upstream-Contact: The FreeHEP team <developers@freehep.org>
+Source: http://java.freehep.org/
+
+Files: *
+Copyright: 2000-2007, CERN, Geneva, Switzerland
+           2000-2007, SLAC, Stanford, California, U.S.A.
+           2000-2007, University of California Santa Cruz, U.S.A.
+License: LGPL-2.1+
+  On Debian GNU/Linux system you can find the complete text of the
+  LGPL-2.1 license in '/usr/share/common-licenses/LGPL-2.1'
+  No license files are included in upstream tarball but copyright holders
+  list is available at
+  <http://java.freehep.org/svn/repos/freehep/show/freehep/trunk/vectorgraphics/LICENSE.txt>
+  and adopted license at <http://java.freehep.org/license.html>
+
+Files: debian/*
+Copyright: 2009-2016, Giovanni Mascellani <gio@debian.org>
+           2009-2010, Gabriele Giacone <1o5g4r8o@gmail.com>
+           2015, Philipp Huebner <debalance@debian.org>
+License: GPL-3+
+  On Debian GNU/Linux system you can find the complete text of the
+  GPL-3 license in '/usr/share/common-licenses/GPL-3'

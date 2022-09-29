@@ -1,0 +1,4 @@
+version=3
+opts="uversionmangle=s/^.*-SNAPSHOT/~$1/,dversionmangle=s/\+dfsg[0-9]*//" \
+  http://java.freehep.org/maven2/org/freehep/freehep-io/ \
+  (\d.*)/ debian debian/orig-tar.sh

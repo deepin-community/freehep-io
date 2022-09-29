@@ -1,0 +1,31 @@
+From: Giovanni Mascellani <gio@debian.org>
+Subject: Add classpath to compiled JAR
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+Index: freehep-io/pom.xml
+===================================================================
+--- freehep-io.orig/pom.xml
++++ freehep-io/pom.xml
+@@ -17,6 +17,22 @@
+       <url>http://java.freehep.org/maven2</url>
+     </repository>
+   </repositories>
++  <build>
++    <plugins>
++      <plugin>
++        <artifactId>maven-jar-plugin</artifactId>
++        <configuration>
++          <archive>
++            <manifest>
++              <addClasspath>true</addClasspath>
++              <classpathLayoutType>repository</classpathLayoutType>
++              <classpathPrefix>/usr/share/maven-repo</classpathPrefix>
++            </manifest>
++          </archive>
++        </configuration>
++      </plugin>
++    </plugins>
++  </build>
+   <dependencies>
+      <dependency>
+         <groupId>org.freehep</groupId>

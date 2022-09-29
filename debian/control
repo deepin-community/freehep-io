@@ -1,0 +1,31 @@
+Source: freehep-io
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Giovanni Mascellani <gio@debian.org>,
+ Philipp Huebner <debalance@debian.org>
+Build-Depends:
+ debhelper (>= 10),
+ default-jdk,
+ maven-debian-helper
+Build-Depends-Indep:
+ junit,
+ libfreehep-util-java (>= 2.0.2-2)
+Standards-Version: 4.1.1
+Vcs-Git: https://anonscm.debian.org/git/pkg-java/freehep/freehep-io.git
+Vcs-Browser: https://anonscm.debian.org/git/pkg-java/freehep/freehep-io.git
+Homepage: http://java.freehep.org/
+
+Package: libfreehep-io-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Recommends: ${maven:OptionalDepends}
+Description: FreeHEP I/O library
+ This library offers a collection of utility subclasses of standard
+ IO Java classes (such as InputStrem, OutputStream, Reader and Writer),
+ which help in dealing with encodings, byte order, tagged streams or
+ other common IO-related issues. It is mainly used by other libraries
+ within the FreeHEP project.
+ .
+ FreeHEP is a collection of Java libraries used in High Energy Physics.

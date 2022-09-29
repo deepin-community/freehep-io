@@ -1,0 +1,74 @@
+freehep-io (2.0.2-6) unstable; urgency=medium
+
+  [ tony mancill ]
+  * Team upload.
+  * Remove Gabriele Giacone from Uploaders (Closes: #856752)
+
+  [ Giovanni Mascellani ]
+  * Bump Standards-Version to 4.1.1.
+  * Change priority to optional.
+  * Switch build system to debhelper 10.
+  * Reformat some fields in debian/control.
+
+ -- Giovanni Mascellani <gio@debian.org>  Sat, 04 Nov 2017 16:27:26 +0100
+
+freehep-io (2.0.2-5) unstable; urgency=medium
+
+  [ Giovanni Mascellani ]
+  * Remove obsolete lines from gbp.conf.
+  * Move package to priority extra.
+  * Use secure Vcs-* URLs.
+  * Bump Standards-Version to 3.9.8 (no changes required).
+  * Build with debhelper 9 instead of CDBS.
+  * Remove trivial information in debian/README.source.
+  * Add classpath to the JAR manifest.
+  * Make patches DEP-3 compliant.
+
+  [ Philipp Huebner ]
+  * Added myself as uploader
+  * Updated Standards-Version: 3.9.6 (no changes needed)
+  * Updated VCS links
+  * Switched to Debhelper 9
+  * Updated debian/copyright and made it lintian clean
+
+ -- Giovanni Mascellani <gio@debian.org>  Thu, 21 Jul 2016 12:10:20 +0200
+
+freehep-io (2.0.2-4) unstable; urgency=low
+
+  * Team upload
+
+  [ Giovanni Mascellani ]
+  * default-jdk moved from Build-Depends-Indep to Build-Depends
+  * Added real watch file
+  * Fixed my email address.
+
+  [ Torsten Werner ]
+  * Remove Java runtime from Depends.
+  * Update Standards-Version: 3.9.1.
+  * Switch to source format 3.0.
+
+ -- Torsten Werner <twerner@debian.org>  Wed, 31 Aug 2011 13:24:44 +0200
+
+freehep-io (2.0.2-3) unstable; urgency=low
+
+  * Description improved.
+  * debian/copyright: fixed.
+  * Standards version bumped to 3.8.4.
+
+ -- Giovanni Mascellani <mascellani@poisson.phc.unipi.it>  Wed, 03 Feb 2010 11:25:18 +0100
+
+freehep-io (2.0.2-2) unstable; urgency=low
+
+  * debian/fake-poms.conf: deleted, now openide-util provides a POM
+  * Enabling compile time tests
+  * debian/control: typo in long description
+  * Adding Gabriele Giacone as comaintainer
+  * debian/fake-poms.conf: deleted, not needed anymore
+
+ -- Giovanni Mascellani <mascellani@poisson.phc.unipi.it>  Tue, 08 Dec 2009 17:18:51 +0100
+
+freehep-io (2.0.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #554795)
+
+ -- Giovanni Mascellani <mascellani@poisson.phc.unipi.it>  Sat, 14 Nov 2009 19:43:49 +0100
